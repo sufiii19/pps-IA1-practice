@@ -1,4 +1,4 @@
-gcc -g p3original.c;./a.out
+ gcc -g p3original.c;./a.out
 enter the value of n
 6
 sum is 21 
@@ -33,14 +33,13 @@ enter the value of n
 (gdb) s
 add (n=6) at p3original.c:11
 11   int sum=0,i;
-(gdb) 
-12      for(i=1;i<=n;i++)
 (gdb) p
 The history is empty.
 (gdb) c
 Continuing.
-sum is 21[Inferior 1 (process 415) exited normally]
+sum is 21[Inferior 1 (process 968) exited normally]
 (gdb) l
+6     scanf("%d",&n);
 7     return n;
 8     }
 9     int add(int n)
@@ -50,5 +49,4 @@ sum is 21[Inferior 1 (process 415) exited normally]
 13      {
 14        sum=sum+i;
 15      }
-16      return sum;
 (gdb) 
